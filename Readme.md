@@ -12,5 +12,5 @@ As a visualizer needs to be registered for a specific object type, and you canno
 compile the project. Copy the resulting Dlls in the Visualizer folder of Visual Studio.
 
 ### Viewing
-To view the vale of a variable `v`, add to the Watch Window the value `new System.WeakReference(v)`. Choose "Dump Visualizer" as a viewer. If you want to keep track of the values of this variable, you can choose to "View in a Browser" to have this open in your prefered browser. 
+To view the value of a variable `v`, add to the Watch Window the value `new System.WeakReference(v)`. Choose "Dump Visualizer" as a viewer. If you want to keep track of the values of this variable, you can choose to "View in a Browser" to have this open in your prefered browser. 
 

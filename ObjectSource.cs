@@ -15,7 +15,7 @@ namespace DumpVisualizer
         public override void GetData(object target, Stream outgoingData)
         {
             var realTarget = ((WeakReference)target).Target;
-            base.GetData(realTarget.Dump(useScripts: true), outgoingData);
+            base.GetData(realTarget.Dump(), outgoingData);
         }
     }
 }
