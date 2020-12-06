@@ -240,7 +240,7 @@ namespace DumpVisualizer
                     .ToList();
             }
             var toStringMethod = type.GetMethod("ToString", new Type[0]);
-            if (toStringMethod.DeclaringType != typeof(object) &&  //ToString has a specific implementation. Could provide usefull data
+            if (toStringMethod != null && toStringMethod.DeclaringType != typeof(object) &&  //ToString has a specific implementation. Could provide usefull data
                 !toStringMethod.DeclaringType.Namespace.StartsWith("System")) //Ignores default ToString implemetation, like ValueTuple
                 result.Insert(0, new PropInfo());
             return result;
